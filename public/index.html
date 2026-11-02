@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEase | Shopping Cart</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: #172033; background: #f4f7fb; }
+    header { background: #172554; color: white; padding: 22px 7%; }
+    header h1 { margin: 0; font-size: 27px; }
+    header p { margin: 7px 0 0; color: #dbeafe; }
+    main { max-width: 1050px; margin: 38px auto; padding: 0 22px; }
+    .hero { background: white; border-radius: 16px; padding: 32px; box-shadow: 0 8px 28px #17255412; }
+    .hero h2 { margin-top: 0; font-size: 30px; }
+    .hero p { color: #526078; line-height: 1.7; }
+    .links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
+    a { display: inline-block; padding: 11px 16px; border-radius: 9px; background: #2563eb; color: white; text-decoration: none; }
+    a.secondary { background: #e8eefc; color: #1e40af; }
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 16px; margin-top: 22px; }
+    .feature { background: white; border: 1px solid #e3e9f3; border-radius: 12px; padding: 20px; }
+    .feature h3 { margin-top: 0; }
+    footer { text-align: center; color: #64748b; padding: 25px; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ShopEase</h1>
+    <p>Shopping Cart Management Web Application</p>
+  </header>
+  <main>
+    <section class="hero">
+      <h2>Welcome to ShopEase</h2>
+      <p>This page is served by the Node.js built-in <strong>FS module</strong> from the
+      <code>public</code> directory when you visit <code>http://localhost:3000/home</code>.</p>
+      <p>Use the links below to test the HTTP server routes. The Express REST API runs independently on port 4000.</p>
+      <div class="links">
+        <a href="/cart">View HTTP Cart JSON</a>
+        <a class="secondary" href="/about">About Application</a>
+        <a class="secondary" href="/">Welcome Route</a>
+      </div>
+    </section>
+    <section class="features">
+      <article class="feature"><h3>Node.js HTTP</h3><p>Custom routes and HTTP request methods on port 3000.</p></article>
+      <article class="feature"><h3>FS Module</h3><p>Reads and serves this HTML file from the public folder.</p></article>
+      <article class="feature"><h3>Express REST API</h3><p>CRUD operations for cart products on port 4000.</p></article>
+    </section>
+  </main>
+  <footer>MT1 Lab Examination · Data is stored in JavaScript arrays · No database</footer>
+</body>
+</html>

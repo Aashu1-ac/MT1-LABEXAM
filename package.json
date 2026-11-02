@@ -1,0 +1,13 @@
+{
+  "name": "mt1-labexam-shopping-cart",
+  "version": "1.0.0",
+  "description": "Shopping Cart Management Web Application using Node.js HTTP, FS and Express.js",
+  "type": "module",
+  "scripts": {
+    "start:http": "node httpServer.js",
+    "start:express": "node expressApp.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
